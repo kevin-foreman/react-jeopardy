@@ -20,6 +20,7 @@ export default class App extends Component {
     this.selectQuestion = this.selectQuestion.bind(this);
   }
   recordResponse(newText) {
+    console.log("stuff");
     this.setState({ userResponse: newText });
   }
   submitResponse(events) {
