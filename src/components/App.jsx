@@ -28,7 +28,7 @@ export default class App extends Component {
     } else if (this.state.currentQuestion.answer) {
       this.setState({score: (this.state.score -= this.state.currentQuestion.value)})
     }
-    e.target.value = '';
+    events.target.value = '';
     this.setState(prevState => ({answeredQuestions: [...prevState.answeredQuestions, this.state.currentQuestion.id], currentQuestion: {}}), () => console.log('here!!!'))
   }
   selectQuestion(question) {
