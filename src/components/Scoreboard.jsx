@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from 'prop-types';
 
 
 const Scoreboard = (props) => {
@@ -8,5 +9,9 @@ const Scoreboard = (props) => {
         </div>
     );
 };
+
+Scoreboard.propTypes = {
+    score: PropTypes.number,
+}
 
 export default Scoreboard;

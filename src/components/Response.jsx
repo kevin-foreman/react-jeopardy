@@ -1,4 +1,5 @@
 import React  from "react";
+import PropTypes from 'prop-types';
 
 const Response = (props) => {
 
@@ -18,7 +19,7 @@ const Response = (props) => {
     );
 };
 
-Respose.propTypes = {
+Response.propTypes = {
     recordResponse: PropTypes.func,
     submitResponse: PropTypes.func,
 }
